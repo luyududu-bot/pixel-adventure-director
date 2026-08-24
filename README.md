@@ -165,27 +165,27 @@ $pixel-adventure-director
 
 ## 安装
 
-把本仓库克隆到 Codex 的个人 Skills 目录：
+将本仓库克隆到你所使用、且具备图像生成能力的 Agent（例如 Codex）的个人 Skills 目录。不同 Agent 的目录位置可能不同，请将 `<YOUR_AGENT_SKILLS_DIR>` 替换为实际路径。
 
 ### macOS / Linux
 
 ```bash
-git clone https://github.com/luyududu-bot/pixel-adventure-director.git ~/.codex/skills/pixel-adventure-director
+git clone https://github.com/luyududu-bot/pixel-adventure-director.git "<YOUR_AGENT_SKILLS_DIR>/pixel-adventure-director"
 ```
 
 ### Windows PowerShell
 
 ```powershell
-git clone https://github.com/luyududu-bot/pixel-adventure-director.git "$env:USERPROFILE\.codex\skills\pixel-adventure-director"
+git clone https://github.com/luyududu-bot/pixel-adventure-director.git "<YOUR_AGENT_SKILLS_DIR>\pixel-adventure-director"
 ```
 
-安装后，在新对话中显式调用：
+安装后，可以在新对话中显式调用：
 
 ```text
-$pixel-adventure-director 我想做一张关于开学成长的像素画。
+$pixel-adventure-director
 ```
 
-如果 Codex 已经能够根据描述自动识别该 Skill，也可以直接说你的需求。
+调用后直接说出你的视觉需求即可。如果你使用的 Agent 支持根据描述自动发现 Skills，也可以直接描述需求，无需显式调用名称。
 
 ## 仓库结构
 
@@ -206,7 +206,7 @@ pixel-adventure-director/
 ```
 
 - `SKILL.md`：执行入口、核心判断链和模块路由。
-- `agents/openai.yaml`：Skill 在 Codex 中的显示名称与默认调用方式。
+- `agents/openai.yaml`：可选的 Agent 界面元数据与默认调用方式。
 - `references/`：交互、冒险化、人物、场景、视觉语言、生成与 QA 的详细规则。
 
 ## 设计边界
