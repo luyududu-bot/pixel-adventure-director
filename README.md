@@ -16,14 +16,14 @@
 
 下面只列用户实际需要输入的内容；选择题和必要信息由 Pixel Adventure Director 主动组织。每个案例最多三次输入，全部输入合计不超过 20 个字符。
 
-### 01｜高考志愿填报
+### 01｜开学成长
 
-![高考志愿填报冒险路径](assets/examples/example-00-adventure-path.png)
+![开学成长的冒险路径](assets/examples/example-00-adventure-path.png)
 
 ```text
-高考志愿填报H5
-AABBB
-AA
+开学成长
+H5
+冒险世界，单人
 ```
 
 ### 02｜第一次独自生活
@@ -218,3 +218,4 @@ Pixel Adventure Director 适合“需要场景叙事与视觉转译”的像素�
 - 不需要场景、空间关系或叙事判断的普通图像处理。
 
 它的目标不是让所有画面都更奇幻，而是让每一个视觉决定都服务于用户真实想表达的经验。
+
