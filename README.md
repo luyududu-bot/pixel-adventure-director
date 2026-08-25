@@ -1,8 +1,16 @@
 # Pixel Adventure Director
 
-把现实经历、情绪和主题，转译成具有成熟像素美术、冒险隐喻与叙事空间的视觉场景。
+## 介绍
 
-**Pixel Adventure Director 是一位视觉导演，不是一层像素滤镜。** 你只需要简单告诉它大概的用途、主题和想要的感觉，它就会用一到两轮清晰的选项，集中确认尺寸、角色、叙事与风格等必要信息，然后快速生成有审美、有氛围、也有故事感的像素游戏风画面。它以温暖的冒险叙事为默认创作倾向，但冒险强度、现实程度、角色参与、画幅与整体气质都可以根据项目自由调整；首版若有偏差，再用一句话纠正即可。
+### 这是什么
+
+**Pixel Adventure Director 不是单纯的像素滤镜，而是一位像素视觉导演。**
+
+该 Skill 面向有审美需求、但不熟悉如何利用 AI 完成高质量像素风画面的内容创作者。你只需要告诉它大概的用途、主题和想要的感觉，它就会通过一到两轮集中提问，快速确认画面尺寸、角色方式、叙事强度与视觉方向等必要信息。无论你已经有清晰的项目规划，还是只有模糊的情绪或概念，它都能将其转译成有审美、有氛围、有故事感的像素游戏风图像。
+
+使用过程中，你只需根据引导提供相应素材，或直接用字母快速回答。它默认偏向温暖、探索与成长感的冒险叙事，但画面的冒险强度、现实程度、角色参与方式、尺寸和整体气质都支持自由调整。
+
+Pixel Adventure Director 主要针对 GPT 图像模型设计和测试。所有搭载 GPT 图像生成能力并支持加载 Skills 的 Agent 均可使用，也欢迎尝试将它应用于其他图像模型。
 
 它从真实状态出发，寻找一个能被看见、被进入，也能自然形成故事的场景：
 
@@ -56,9 +64,23 @@ AA
 白天，不要悬疑
 ```
 
-## 提示词可以非常简单
+## 用法
 
-你不需要先写完整的美术提示词。一句话就能开始：
+### 1. 调用 Skill
+
+下载 Skill 后，在对话中调用：
+
+```text
+$pixel-adventure-director
+```
+
+### 2. 简单说出你的需求
+
+- 想表达什么
+- 图片用在哪里
+- 希望有什么感觉
+
+即使只有一句模糊的想法也可以，你不需要先写完整的美术提示词。例如：
 
 ```text
 $pixel-adventure-director 我想做一张关于开学成长的像素画。
@@ -80,13 +102,15 @@ $pixel-adventure-director 做一个有氛围感的像素场景，带一个角色
 $pixel-adventure-director 做一张真实、安静的大学宿舍夜景，不要奇幻元素。
 ```
 
+### 3. 快速确认与生成
+
 Pixel Adventure Director 会把真正影响结果的信息集中成一轮选择题，复杂任务最多两轮。你可以直接回复：
 
 ```text
 1A 2B 3A 4C
 ```
 
-也可以在字母后补充自己的想法、项目背景或上传参考素材。
+也可以在字母后补充自己的想法、项目背景或上传参考素材。确认完成后，它会直接生成图像；首版如需调整，只需继续指出问题。
 
 ## 更多极简用法
 
@@ -163,11 +187,15 @@ $pixel-adventure-director
 - 优先建立一个清晰主隐喻、一个场景母题和可见的世界规则。
 - 修改时保留已经成立的部分，不用无关细节掩盖概念问题。
 
-## 安装
+## 下载与安装
 
-Pixel Adventure Director 主要针对 GPT 图像模型设计和测试。所有搭载 GPT 图像生成能力、且支持加载 Skills 的 Agent 均可使用；也欢迎尝试将它用于其他图像模型，并根据实际模型能力调整生成与编辑流程。
+该 Skill 已在 GitHub 开源。如果觉得好用，欢迎给项目一个 Star：
 
-将本仓库克隆到所用 Agent 的个人 Skills 目录。不同 Agent 的目录位置可能不同，请将 `<YOUR_AGENT_SKILLS_DIR>` 替换为实际路径。
+https://github.com/luyududu-bot/pixel-adventure-director
+
+最简单的方式是把上面的仓库链接直接发给支持 Skill 安装的 Agent，并让它下载和安装。
+
+也可以手动将本仓库克隆到所用 Agent 的个人 Skills 目录。不同 Agent 的目录位置可能不同，请将 `<YOUR_AGENT_SKILLS_DIR>` 替换为实际路径。
 
 ### macOS / Linux
 
@@ -181,13 +209,7 @@ git clone https://github.com/luyududu-bot/pixel-adventure-director.git "<YOUR_AG
 git clone https://github.com/luyududu-bot/pixel-adventure-director.git "<YOUR_AGENT_SKILLS_DIR>\pixel-adventure-director"
 ```
 
-安装后，可以在新对话中显式调用：
-
-```text
-$pixel-adventure-director
-```
-
-调用后直接说出你的视觉需求即可。如果你使用的 Agent 支持根据描述自动发现 Skills，也可以直接描述需求，无需显式调用名称。
+安装完成后，按照上方“用法”调用即可。如果 Agent 支持根据描述自动发现 Skills，也可以直接描述需求，无需显式调用名称。
 
 ## 仓库结构
 
